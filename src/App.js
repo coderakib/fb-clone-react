@@ -1,13 +1,33 @@
 import React from 'react';
 import './App.css';
+import Feed from './Feed';
+import Header from './Header';
+import Login from './Login';
+import Sidebar from './Sidebar';
+import Widgets from './Widgets';
+import { useStateValue } from './StateProvider';
 
 function App() {
-  return (
-    //Bem naming convention
-    <div className="app">
-      <h1>Hi CoderAkib!</h1>
-    </div>
-  );
+    
+    const [{ user }, dispatch] = useStateValue();
+
+    return (
+        //Bem naming convention
+        <div className="app" >
+            { !user ? (
+                <Login />
+            ) : (
+                <>
+                    <Header />
+                    <div className=" app__body">
+                        <Sidebar />
+                        <Feed />
+                        <Widgets />
+                    </div>
+                </> 
+            )}
+        </div>
+    );
 }
 
 export default App;

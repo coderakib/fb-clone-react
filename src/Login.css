@@ -1,0 +1,48 @@
+.login {
+    background-color: #f8f8f8;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+.login > button {
+    width: 300px;
+    background-color: #2e81f4;
+    color: #eff2f5;
+    font-weight: 800;
+    margin-bottom: 100px;
+}
+
+.login > button:hover {
+    background-color: white;
+    color: #2e81f4;
+}
+
+
+.logo2 {
+    height: 200px;
+    width: 300px;
+    align-items: center;
+}
+
+.login > div > img {
+    object-fit: contain;
+    height: 150px;
+    margin-top: 40px;
+}
+
+.login > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.login__akib{
+    font-size:20px;
+    font-weight:700;
+    color: #2e81f4;
+    text-align: center;
+    margin-bottom: 50px;
+    font-style: italic;
+    text-decoration-line: center;
+    
+}
